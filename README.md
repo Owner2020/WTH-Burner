@@ -1,55 +1,56 @@
 # WTH-Burner
-~~What the hell~~ Washed too hot Stealth**burner** - a scaled down Stealthburner for the tiny Vorons
+适用于小型 Vorons 的缩小版 Stealthburner
 
 ![](pictures/WTH_Burner.png)
  <img src="pictures/V24.jpg" width="30%"/>  <img src="pictures/print.jpg" width="50%"/>
 
-### Work in Progress
+### 正在进行的工作
 
-This is still in progress and not ready to be printed, but I thought I could start the Repo already to collect some information. So some specs arounf the Wth-Burner:
+这仍在进行中，还没有准备好打印，但我认为我可以已经启动 Repo 来收集一些信息。所以 Wth-Burner 的一些规格：
 
-- 80% scaled Stealthburner that fit's the tiny Vorons like the V0 (more information below)
-- 4020 for Part-cooling (like from the Afterburner) and 3007 for Hotend-cooling
-- CW2 extruder with adapted internals to fir the small formfactor
-- Full size nozzle LEDs - same as for his big brother (Logo LED is on the TO-Do)
-- Compatible with Phaethus Dragon, Red lizard and Dragonfly-BMO (I would recommend a ceramic heater due the tight space)
-- Weight of 265g (Phaethus Dragon SF + 17mm 10T Moons)  
+80% 缩放的 Stealthburner 适合像 V0 这样的微型 Vorons（更多信息见下文）
+4020 用于部分冷却（如从加力燃烧室）和 3007 用于热端冷却
+CW2 挤出机，具有合适的内部结构，以适应小尺寸
+全尺寸喷嘴 LED - 与他的大哥相同（徽标 LED 在待办事项上）
+与 Phaethus Dragon、Red lizard 和 Dragonfly-BMO 兼容（由于空间狭小，我会推荐陶瓷加热器）
+重量 265 克（Phaethus Dragon SF + 17 毫米 10T Moons）
 
 
-#### Progress
+#### 进展
 
 ##### 30.07.2023 - CAD Beta Release (B1)
 
-Due the high interest in the WTH-Burner I decided to release the CAD file - I still want to impove various things, so there arent any STLs yet. You can use the CAD as a reference for whatever you want to use the WTH Burner on :) I will make a custom X-Carriage with the next update that's less limited by the V0.2 mounting holes - I also have to fix wall-thicknesses here and there and add some space around the hotend (The Red Lizard K1 Pro seems to be the best solution for this tiny space). The main assembly should be functional though.
+30.07.2023 - CAD 测试版 （B1）
+由于对 WTH-Burner 的高度兴趣，我决定发布 CAD 文件 - 我仍然想改进各种东西，所以还没有任何 STL。您可以将 CAD 用作任何要在 :) 上使用 WTH 燃烧器的参考我将在下一次更新中制作一个受 V0.2 安装孔限制较少的定制 X-Carriage - 我还必须在这里和那里修复壁厚，并在热端周围增加一些空间（Red Lizard K1 Pro 似乎是这个小空间的最佳解决方案）。不过，主程序集应该是功能性的。
 
-##### 11.06.2023 - Swapped out the Dragon with the Red Lizard, the ceramic heater seems to be a much better choice for this little space
+##### 11.06.2023 - 将 Dragon 换成 Red Lizard，陶瓷加热器似乎是这个小空间的更好选择
  <img src="pictures/IMG_2882.jpg" width="49%"/>  <img src="pictures/IMG_2883.jpg" width="49%"/>
 
-##### 15.06.2023 - First test mounting with a MGN9h, still waiting on my MGN7h
+##### 5.06.2023 - 首次使用 MGN9h 进行测试安装，仍在等待我的 MGN7h
  <img src="pictures/IMG_2895.jpg" width="49%"/>  <img src="pictures/IMG_2907.jpg" width="49%"/>
 
-### CAD Preview
+### CAD 预览
 
-This is only a web preview, I will share all the files once I confirmed it's working :)
+这只是一个 Web 预览，一旦我确认它:)工作正常，我将共享所有文件
 
 Link: https://a360.co/43DYPun
 
 
-### What's the catch?
+### 有什么问题?
 
-... Y travel. The Wth-Burner is 9mm thicker than the Mini SB, which can limit the Y travel.
+...Y 行程。Wth-Burner 比 Mini SB 厚 9 毫米，这可能会限制 Y 轴行程。
 
 #### Voron V0.2
 
-A stock [V0.2](https://github.com/VoronDesign/Voron-0) has ~1mm clearance to the front panel, when the nozzle sits at the very front. That means you would loose 8mm of Y travel - only you can tell if you print to the very edge of your bed
+当喷嘴位于最前部时，[V0.2](https://github.com/VoronDesign/Voron-0) 与前面板的间隙为 ~1 毫米。这意味着您将损失 8 毫米的 Y 形行程 - 只有您才能判断是否打印到床的最边缘
 
-##### Solution: Pandora Gantry:
+##### 解决方案：Pandora Gantry:
 
-A very easily solution would be the [Pandora Gantry](https://github.com/MasturMynd/Pandora), which gives you more Y travel. With this you shouldn't have any space limitations (untested). I will use the Pandora Gantry in my V0, so I will be able to confirm that, once I finished the build.
+一个非常简单的解决方案是 Pandora Gantry，它为您提供更多的 Y 行程。 [Pandora Gantry](https://github.com/MasturMynd/Pandora), 这样，您应该没有任何空间限制 （untested）。我将在我的 V0 中使用 Pandora Gantry，因此一旦我完成构建，我将能够确认这一点。
 
 #### Voron Micron
 
-A stock [Micron](https://github.com/PrintersForAnts/Micron) has a little more Y travel than needed - as far I can tell from the CAD, I will have to see how that applies to the real thing once I build mine.
+[Micron](https://github.com/PrintersForAnts/Micron) 的 Y 行程比需要的要多一点 - 据我从 CAD 中可以看出，一旦我构建了我的，我将不得不看看它如何适用于真实的东西。
 
 
 1: Stealthburner - Wth-Burner - Mini-Stealthburner |  2: Wth-Burner - Mini SB |  3: Wth-Burner in TriBall (my V0 with kinematic triple z)
